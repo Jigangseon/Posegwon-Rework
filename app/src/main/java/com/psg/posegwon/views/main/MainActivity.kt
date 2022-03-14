@@ -1,7 +1,8 @@
-package com.psg.posegwon
+package com.psg.posegwon.views.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.psg.posegwon.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
