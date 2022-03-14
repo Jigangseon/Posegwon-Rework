@@ -15,8 +15,9 @@ abstract class BaseActivity<B: ViewDataBinding>(@LayoutRes val res: Int): AppCom
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, res)
         AppLogger.i(tag,"onCreate")
+        binding = DataBindingUtil.setContentView(this, res)
+        binding.lifecycleOwner = this
     }
 
     open fun initView(){
